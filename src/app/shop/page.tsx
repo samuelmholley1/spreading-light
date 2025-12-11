@@ -95,10 +95,10 @@ export default function ShopPage() {
         {/* Custom Order CTA */}
         <div className="mt-20 text-center bg-gradient-to-r from-[#1a1f36] to-[#2d3748] rounded-2xl p-12 border-2 border-[#ffb685]">
           <h2 className="text-3xl md:text-4xl font-bold text-[#ffb685] mb-4">
-            Don't see what you're looking for?
+            Don&apos;t see what you&apos;re looking for?
           </h2>
           <p className="text-xl text-[#f5f5dc] mb-6 max-w-2xl mx-auto">
-            We create custom bleach art designs! Share your vision and we'll bring it to life.
+            We create custom bleach art designs! Share your vision and we&apos;ll bring it to life.
           </p>
           <Link href="/custom" className="btn-primary text-lg px-8 py-4 inline-block">
             Request Custom Design

@@ -9,10 +9,6 @@ const requiredEnvVars = [
   'GOOGLE_SITE_VERIFICATION',
 ] as const;
 
-const optionalEnvVars = [
-  'NODE_ENV',
-] as const;
-
 export function validateEnv() {
   const missing: string[] = [];
   

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Link from "next/link";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -325,7 +324,7 @@ export default function Home() {
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
                 rows={5}
                 className="w-full px-4 py-3 rounded-lg bg-[#2d3748] border-2 border-[#ffb685] text-[#f5f5dc] focus:outline-none focus:ring-2 focus:ring-[#d4a574]"
-                placeholder="Tell us about your design idea, size preference, shirt color, etc..."
+                placeholder="Tell us about your design idea, size preference, shirt color, etc."
               />
             </div>
 
