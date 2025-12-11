@@ -95,7 +95,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://spreadinglight.com" />
       </head>
       <body
-        className={${crimsonText.variable} antialiased}
+        className={`${crimsonText.variable} antialiased`}
       >
         <a
           href="#main-content"
