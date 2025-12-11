@@ -29,8 +29,7 @@ export default function ShopPage() {
         <div className="flex flex-wrap gap-4 justify-center mb-12">
           <button
             onClick={() => setSelectedCategory('all')}
-            className={px-6 py-3 rounded-lg font-semibold transition-all $
-{selectedCategory === 'all' ? 'btn-primary' : 'btn-secondary'}}
+            className={`px-6 py-3 rounded-lg font-semibold transition-all ${selectedCategory === 'all' ? 'btn-primary' : 'btn-secondary'}`}
           >
             All Designs
           </button>
@@ -38,8 +37,7 @@ export default function ShopPage() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id as DesignCategory)}
-              className={px-6 py-3 rounded-lg font-semibold transition-all $
-{selectedCategory === cat.id ? 'btn-primary' : 'btn-secondary'}}
+              className={`px-6 py-3 rounded-lg font-semibold transition-all ${selectedCategory === cat.id ? 'btn-primary' : 'btn-secondary'}`}
             >
               {cat.name}
             </button>
