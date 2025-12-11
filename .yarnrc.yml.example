@@ -1,0 +1,17 @@
+# Yarn Berry configuration without PnP
+nodeLinker: node-modules
+
+# Enable zero-installs (optional)
+enableGlobalCache: false
+
+# Better compression
+compressionLevel: mixed
+
+# Modern features
+enableImmutableInstalls: false
+enableInlineBuilds: true
+
+# Plugin recommendations
+plugins:
+  - path: .yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs
+  - path: .yarn/plugins/@yarnpkg/plugin-workspace-tools.cjs
