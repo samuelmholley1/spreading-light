@@ -53,33 +53,33 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1f36] to-[#0a0a0a]">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-12 bleach-effect">
-            <h1 className="text-7xl md:text-9xl font-bold bg-gradient-to-r from-[#ffb685] via-[#d4a574] to-[#ffb685] bg-clip-text text-transparent leading-tight mb-6 animate-pulse">
-              Spreading Light
+      <section className="relative min-h-screen flex items-center justify-center px-6 md:px-8 bg-gradient-to-b from-[#0a0a0a] via-[#1a1f36] to-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="mb-16 bleach-effect space-y-8">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black bg-gradient-to-r from-[#ffb685] via-[#d4a574] to-[#ffb685] bg-clip-text text-transparent leading-[0.9] tracking-tighter mb-8">
+              SPREADING<br/>LIGHT
             </h1>
-            <div className="h-1 w-64 mx-auto bg-gradient-to-r from-transparent via-[#ffb685] to-transparent mb-8"></div>
-            <h2 className="text-3xl md:text-5xl font-semibold text-[#f5f5dc] mb-6">
-              Custom Bleach Art T-Shirts
+            <div className="h-0.5 w-32 mx-auto bg-gradient-to-r from-transparent via-[#ffb685] to-transparent"></div>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-[#f5f5dc] tracking-wide uppercase">
+              Custom Bleach Art
             </h2>
-            <p className="text-xl md:text-2xl text-[#d4a574] leading-relaxed max-w-3xl mx-auto">
-              Unique wearable art on navy & black shirts<br/>
-              <span className="text-[#ffb685]">Pastel orange & vibrant tan designs</span>
+            <p className="text-lg md:text-xl text-[#d4a574] leading-relaxed max-w-2xl mx-auto font-light">
+              Wearable art for the culture. Hand-crafted bleach designs on premium tees.<br/>
+              <span className="text-[#ffb685] font-medium">Each piece is one of one.</span>
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <a href="#designs" className="btn-primary text-lg px-10 py-4 inline-block">
-              View Designs
+          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-16">
+            <a href="#designs" className="btn-primary text-base px-12 py-4 inline-block font-semibold uppercase tracking-wider">
+              Shop Designs
             </a>
-            <a href="#order" className="btn-secondary text-lg px-10 py-4 inline-block">
-              Place Order
+            <a href="#order" className="btn-secondary text-base px-12 py-4 inline-block font-semibold uppercase tracking-wider">
+              Custom Order
             </a>
           </div>
 
-          <div className="text-[#d4a574] text-sm">
-            Starting at $28.99  Free shipping over $50
+          <div className="text-[#d4a574] text-xs uppercase tracking-widest">
+            From $28.99 • Free Shipping $50+
           </div>
         </div>
 
@@ -91,136 +91,177 @@ export default function Home() {
       </section>
 
       {/* Design Showcase Section */}
-      <section id="designs" className="py-24 px-4 bg-[#1a1f36]">
+      <section id="designs" className="py-32 px-6 md:px-8 bg-[#1a1f36]">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#ffb685] mb-6">
-              Design Collections
+          <div className="text-center mb-24 space-y-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#ffb685] tracking-tight uppercase">
+              Collections
             </h2>
-            <p className="text-xl text-[#f5f5dc] max-w-2xl mx-auto">
-              Each piece is handcrafted through bleach art techniques, making every shirt one-of-a-kind
+            <p className="text-lg md:text-xl text-[#f5f5dc] max-w-2xl mx-auto font-light leading-relaxed">
+              Hand-crafted bleach art. Zero mass production.<br/>Every shirt is completely unique.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-20">
             {/* Pop Culture */}
-            <div className="product-card group text-center p-8">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
-                <svg className="w-12 h-12 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="product-card group text-left p-10">
+              <div className="w-16 h-16 mb-8 rounded-lg bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[#ffb685] mb-3">Pop Culture</h3>
-              <p className="text-[#f5f5dc] mb-4">
-                Star Wars, movies, gaming characters
+              <h3 className="text-xl font-black text-[#ffb685] mb-4 uppercase tracking-tight">Pop Culture</h3>
+              <p className="text-[#f5f5dc] mb-3 font-light leading-relaxed">
+                Star Wars, movies, gaming icons
               </p>
-              <p className="text-sm text-[#d4a574]">
-                Example: Darth Vader vs Darth Maul
+              <p className="text-xs text-[#d4a574] uppercase tracking-wider">
+                Vader • Maul • More
               </p>
             </div>
 
             {/* Cannabis & Nature */}
-            <div className="product-card group text-center p-8">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
-                <svg className="w-12 h-12 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="product-card group text-left p-10">
+              <div className="w-16 h-16 mb-8 rounded-lg bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[#ffb685] mb-3">Cannabis & Nature</h3>
-              <p className="text-[#f5f5dc] mb-4">
-                Pot leaves, botanical designs, natural art
+              <h3 className="text-xl font-black text-[#ffb685] mb-4 uppercase tracking-tight">Cannabis & Nature</h3>
+              <p className="text-[#f5f5dc] mb-3 font-light leading-relaxed">
+                Botanical designs, leaf art, natural vibes
               </p>
-              <p className="text-sm text-[#d4a574]">
-                Example: Mandala leaf patterns
+              <p className="text-xs text-[#d4a574] uppercase tracking-wider">
+                Mandala Patterns
               </p>
             </div>
 
             {/* Abstract */}
-            <div className="product-card group text-center p-8">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
-                <svg className="w-12 h-12 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="product-card group text-left p-10">
+              <div className="w-16 h-16 mb-8 rounded-lg bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[#ffb685] mb-3">Abstract Art</h3>
-              <p className="text-[#f5f5dc] mb-4">
-                Cosmic bursts, galaxy effects, unique patterns
+              <h3 className="text-xl font-black text-[#ffb685] mb-4 uppercase tracking-tight">Abstract Art</h3>
+              <p className="text-[#f5f5dc] mb-3 font-light leading-relaxed">
+                Cosmic bursts, galaxy effects, pure chaos
               </p>
-              <p className="text-sm text-[#d4a574]">
-                Each shirt is truly unique
+              <p className="text-xs text-[#d4a574] uppercase tracking-wider">
+                One of One
               </p>
             </div>
           </div>
 
           {/* Shirt Options */}
-          <div className="bg-[#2d3748] rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-[#ffb685] mb-6 text-center">Available Options</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-[#0a0a0a] border border-[#ffb685]/20 rounded-xl p-10 md:p-12 max-w-5xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-black text-[#ffb685] mb-10 uppercase tracking-tight">Specs</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div>
-                <h4 className="text-xl font-semibold text-[#d4a574] mb-3">Shirt Colors</h4>
-                <ul className="space-y-2 text-[#f5f5dc]">
-                  <li className="flex items-center">
-                    <span className="w-4 h-4 rounded-full bg-[#1a1f36] border-2 border-[#ffb685] mr-3"></span>
+                <h4 className="text-sm font-bold text-[#ffb685] mb-4 uppercase tracking-widest">Base Colors</h4>
+                <ul className="space-y-3 text-[#f5f5dc] font-light">
+                  <li className="flex items-center gap-3">
+                    <span className="w-5 h-5 rounded bg-[#1a1f36] border border-[#ffb685]/40"></span>
                     Navy Blue
                   </li>
-                  <li className="flex items-center">
-                    <span className="w-4 h-4 rounded-full bg-black border-2 border-[#ffb685] mr-3"></span>
+                  <li className="flex items-center gap-3">
+                    <span className="w-5 h-5 rounded bg-black border border-[#ffb685]/40"></span>
                     Black
                   </li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-xl font-semibold text-[#d4a574] mb-3">Bleach Colors</h4>
-                <ul className="space-y-2 text-[#f5f5dc]">
-                  <li className="flex items-center">
-                    <span className="w-4 h-4 rounded-full bg-[#ffb685] mr-3"></span>
+                <h4 className="text-sm font-bold text-[#ffb685] mb-4 uppercase tracking-widest">Bleach Tones</h4>
+                <ul className="space-y-3 text-[#f5f5dc] font-light">
+                  <li className="flex items-center gap-3">
+                    <span className="w-5 h-5 rounded bg-[#ffb685]"></span>
                     Pastel Orange
                   </li>
-                  <li className="flex items-center">
-                    <span className="w-4 h-4 rounded-full bg-[#d4a574] mr-3"></span>
+                  <li className="flex items-center gap-3">
+                    <span className="w-5 h-5 rounded bg-[#d4a574]"></span>
                     Vibrant Tan
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="mt-6">
-              <h4 className="text-xl font-semibold text-[#d4a574] mb-3">Sizes Available</h4>
-              <p className="text-[#f5f5dc]">S  M  L  XL  2XL  3XL</p>
+              <div>
+                <h4 className="text-sm font-bold text-[#ffb685] mb-4 uppercase tracking-widest">Sizing</h4>
+                <div className="flex flex-wrap gap-2">
+                  {['S', 'M', 'L', 'XL', '2XL', '3XL'].map((size) => (
+                    <span key={size} className="px-3 py-1.5 bg-[#1a1f36] text-[#f5f5dc] rounded text-sm font-medium">{size}</span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1f36]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold text-[#ffb685] mb-12">Simple Pricing</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="product-card p-8">
-              <h3 className="text-2xl font-bold text-[#d4a574] mb-4">Standard Designs</h3>
-              <div className="text-5xl font-bold text-[#ffd700] mb-4">$28.99</div>
-              <p className="text-[#f5f5dc] mb-6">Choose from our existing designs</p>
-              <ul className="text-left text-[#f5f5dc] space-y-2 mb-6">
-                <li> Pop culture characters</li>
-                <li> Cannabis/nature themes</li>
-                <li> Abstract patterns</li>
-                <li> All sizes available</li>
+      <section className="py-32 px-6 md:px-8 bg-gradient-to-b from-[#0a0a0a] to-[#1a1f36]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black text-[#ffb685] mb-20 text-center uppercase tracking-tight">Pricing</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="product-card p-10 md:p-12">
+              <div className="mb-8">
+                <h3 className="text-lg font-black text-[#d4a574] mb-3 uppercase tracking-wider">Standard</h3>
+                <div className="flex items-baseline gap-2 mb-4">
+                  <span className="text-6xl font-black text-[#ffb685]">$28</span>
+                  <span className="text-2xl text-[#d4a574]">.99</span>
+                </div>
+                <p className="text-[#f5f5dc] font-light text-sm">Pre-designed bleach art</p>
+              </div>
+              <ul className="text-[#f5f5dc] space-y-3 mb-8 font-light">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>Pop culture characters</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>Cannabis & nature themes</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>Abstract patterns</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>All sizes S-3XL</span>
+                </li>
               </ul>
             </div>
-            <div className="product-card p-8 border-2 border-[#ffb685]">
-              <h3 className="text-2xl font-bold text-[#ffb685] mb-4">Custom Designs</h3>
-              <div className="text-5xl font-bold text-[#ffd700] mb-4">$34.99</div>
-              <p className="text-[#f5f5dc] mb-6">Your vision, our artistry</p>
-              <ul className="text-left text-[#f5f5dc] space-y-2 mb-6">
-                <li> Fully custom design</li>
-                <li> Your idea or concept</li>
-                <li> Professional execution</li>
-                <li> Truly one-of-a-kind</li>
+            <div className="product-card p-10 md:p-12 border-2 border-[#ffb685] relative overflow-hidden">
+              <div className="absolute top-4 right-4 bg-[#ffb685] text-[#0a0a0a] px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">
+                Popular
+              </div>
+              <div className="mb-8">
+                <h3 className="text-lg font-black text-[#ffb685] mb-3 uppercase tracking-wider">Custom</h3>
+                <div className="flex items-baseline gap-2 mb-4">
+                  <span className="text-6xl font-black text-[#ffb685]">$34</span>
+                  <span className="text-2xl text-[#d4a574]">.99</span>
+                </div>
+                <p className="text-[#f5f5dc] font-light text-sm">Your vision, our execution</p>
+              </div>
+              <ul className="text-[#f5f5dc] space-y-3 mb-8 font-light">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>100% custom design</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>Your concept or idea</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>Pro bleach art execution</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#ffb685] mt-1">→</span>
+                  <span>Truly one of one</span>
+                </li>
               </ul>
             </div>
           </div>
-          <p className="mt-8 text-[#d4a574] text-lg">
-            Free shipping on orders over $50  2-3 week turnaround
+          <p className="mt-12 text-center text-[#d4a574] text-sm uppercase tracking-widest">
+            Free Shipping $50+ • 2-3 Week Turnaround
           </p>
         </div>
       </section>

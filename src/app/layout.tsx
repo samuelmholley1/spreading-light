@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Crimson_Text } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -7,9 +7,14 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import CookieConsent from "@/components/CookieConsent";
 
-const crimsonText = Crimson_Text({
-  weight: "400",
-  variable: "--font-crimson",
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
 });
@@ -95,7 +100,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://spreadinglight.com" />
       </head>
       <body
-        className={`${crimsonText.variable} antialiased`}
+        className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
       >
         <a
           href="#main-content"
