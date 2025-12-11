@@ -271,7 +271,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-5xl font-bold text-[#ffb685] mb-6">Place Your Order</h2>
             <p className="text-xl text-[#f5f5dc]">
-              Fill out the form below and we'll get back to you with payment details and timeline
+              Fill out the form below and we&apos;ll get back to you with payment details and timeline
             </p>
           </div>
 
@@ -338,7 +338,7 @@ export default function Home() {
 
             {formStatus === 'success' && (
               <p className="text-center text-green-400 font-semibold">
-                 Order inquiry sent! We'll contact you within 24 hours.
+                 Order inquiry sent! We&apos;ll contact you within 24 hours.
               </p>
             )}
             {formStatus === 'error' && (

@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import { useState } from 'react';
 
 const schoolsJsonLd = {
   '@context': 'https://schema.org',
