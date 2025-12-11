@@ -72,13 +72,11 @@ export default function ShopPage() {
                 </p>
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-[#ffd700]">
-                    
+                    ${product.price}
                   </span>
                   <Link 
-                    href={/shop/$
-{product.id}}
-                    className={tn-primary text-sm px-6 py-2 $
-{!product.inStock && 'opacity-50 cursor-not-allowed'}}
+                    href={`/shop/${product.id}`}
+                    className={`btn-primary text-sm px-6 py-2 ${!product.inStock && 'opacity-50 cursor-not-allowed'}`}
                   >
                     {product.inStock ? 'View Details' : 'Sold Out'}
                   </Link>
