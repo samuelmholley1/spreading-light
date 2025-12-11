@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     
     for (const subscriber of subscribers) {
       await resend.emails.send({
-        from: 'newsletter@mendograss.com',
+        from: 'hello@spreadinglight.com',
         to: subscriber.email,
         subject: subject,
         html: content,

@@ -4,12 +4,12 @@ export default function StructuredData() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://mendograss.com/#organization",
+        "@id": "https://spreadinglight.com/#organization",
         "name": "Mendo Grass",
-        "url": "https://mendograss.com",
+        "url": "https://spreadinglight.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://mendograss.com/logo_colored.jpg",
+          "url": "https://spreadinglight.com/logo_colored.jpg",
           "width": 300,
           "height": 300
         },
@@ -22,22 +22,22 @@ export default function StructuredData() {
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "adam@mendograss.com",
+          "email": "hello@spreadinglight.com",
           "contactType": "Customer Service"
         },
         "sameAs": [
-          "https://instagram.com/mendograss",
-          "https://facebook.com/mendograss"
+          "https://instagram.com/spreadinglight",
+          "https://facebook.com/spreadinglight"
         ]
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://mendograss.com/#localbusiness",
+        "@id": "https://spreadinglight.com/#localbusiness",
         "name": "Mendo Grass",
         "description": "Organic microgreens and wheatgrass farm specializing in premium fresh greens for restaurants and food service.",
-        "url": "https://mendograss.com",
+        "url": "https://spreadinglight.com",
         "telephone": "(707) 555-0123",
-  "email": "adam@mendograss.com",
+  "email": "hello@spreadinglight.com",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Mendocino County",
@@ -85,16 +85,16 @@ export default function StructuredData() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://mendograss.com/#website",
-        "url": "https://mendograss.com",
+        "@id": "https://spreadinglight.com/#website",
+        "url": "https://spreadinglight.com",
         "name": "Mendo Grass",
         "description": "Premium organic microgreens and wheatgrass from Mendocino County",
         "publisher": {
-          "@id": "https://mendograss.com/#organization"
+          "@id": "https://spreadinglight.com/#organization"
         },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://mendograss.com/wholesale?q={search_term_string}",
+          "target": "https://spreadinglight.com/wholesale?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }

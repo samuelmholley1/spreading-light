@@ -7,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://mendograss.com/sitemap.xml',
+    sitemap: 'https://spreadinglight.com/sitemap.xml',
   }
 }
+
