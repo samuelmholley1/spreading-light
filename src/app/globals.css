@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --brand-navy: #1a1f36;
@@ -13,18 +11,27 @@
   --dark-gray: #2d3748;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background-color: var(--brand-black);
-  color: var(--cream);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  background-color: var(--brand-black) !important;
+  color: var(--cream) !important;
   letter-spacing: -0.01em;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-space-grotesk), var(--font-inter), sans-serif;
-  letter-spacing: -0.02em;
-  font-weight: 700;
+  font-family: var(--font-space-grotesk), var(--font-inter), sans-serif !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 700 !important;
+  margin: 0;
 }
 
 /* Custom scrollbar */
@@ -61,53 +68,71 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Button styles */
 .btn-primary {
-  background: linear-gradient(135deg, var(--bleach-pastel) 0%, var(--bleach-tan) 100%);
-  color: var(--brand-black);
-  font-weight: 700;
-  padding: 0.875rem 2.5rem;
-  border-radius: 0.375rem;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
-  cursor: pointer;
-  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--bleach-pastel) 0%, var(--bleach-tan) 100%) !important;
+  color: var(--brand-black) !important;
+  font-weight: 700 !important;
+  padding: 0.875rem 2.5rem !important;
+  border-radius: 0.375rem !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: none !important;
+  cursor: pointer !important;
+  letter-spacing: 0.05em !important;
+  text-decoration: none !important;
+  display: inline-block !important;
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(255, 182, 133, 0.4);
-  filter: brightness(1.1);
+  transform: translateY(-1px) !important;
+  box-shadow: 0 8px 24px rgba(255, 182, 133, 0.4) !important;
+  filter: brightness(1.1) !important;
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--bleach-pastel);
-  border: 2px solid var(--bleach-pastel);
-  padding: 0.875rem 2.5rem;
-  border-radius: 0.375rem;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  background: transparent !important;
+  color: var(--bleach-pastel) !important;
+  border: 2px solid var(--bleach-pastel) !important;
+  padding: 0.875rem 2.5rem !important;
+  border-radius: 0.375rem !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  text-decoration: none !important;
+  display: inline-block !important;
 }
 
 .btn-secondary:hover {
-  background: var(--bleach-pastel);
-  color: var(--brand-black);
-  transform: translateY(-1px);
+  background: var(--bleach-pastel) !important;
+  color: var(--brand-black) !important;
+  transform: translateY(-1px) !important;
 }
 
 /* Card styles */
 .product-card {
-  background: linear-gradient(145deg, rgba(45, 55, 72, 0.6), rgba(26, 31, 54, 0.8));
-  border-radius: 0.75rem;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(255, 182, 133, 0.15);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(145deg, rgba(45, 55, 72, 0.6), rgba(26, 31, 54, 0.8)) !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 1px solid rgba(255, 182, 133, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 .product-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(255, 182, 133, 0.25);
-  border-color: rgba(255, 182, 133, 0.4);
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 40px rgba(255, 182, 133, 0.25) !important;
+  border-color: rgba(255, 182, 133, 0.4) !important;
+}
+
+/* Override any default link styles */
+a {
+  text-decoration: none !important;
+}
+
+/* Form input overrides */
+input, textarea, select {
+  font-family: var(--font-inter), sans-serif !important;
+}
+
+button {
+  font-family: var(--font-inter), sans-serif !important;
 }
