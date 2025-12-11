@@ -15,17 +15,17 @@ const crimsonText = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mendograss.com'),
+  metadataBase: new URL('https://spreadinglight.com'),
   title: {
-    default: 'Mendo Grass - Fresh Organic Microgreens | Mendocino County Farm',
-    template: '%s | Mendo Grass'
+    default: 'Spreading Light - Custom Bleach Art T-Shirts | Unique Designs',
+    template: '%s | Spreading Light'
   },
-  description: 'Premium organic microgreens and wheatgrass from Mendocino County, California. Fresh, locally grown greens for restaurants, schools, and health-conscious consumers.',
-  keywords: 'microgreens, wheatgrass, organic, Mendocino County, California, farm fresh, restaurants, wholesale, pea shoots, radish microgreens, farm to table, sustainable agriculture',
-  authors: [{ name: 'Mendo Grass Farm' }],
-  creator: 'Mendo Grass',
-  publisher: 'Mendo Grass',
-  category: 'Agriculture',
+  description: 'Shop custom bleach art t-shirts featuring unique designs on navy and black shirts. Pop culture, cannabis, and abstract art with pastel orange and vibrant tan bleach effects.',
+  keywords: 'bleach art, t-shirts, custom shirts, bleach tie dye, pop culture tees, cannabis shirts, abstract art clothing, unique apparel, navy shirts, black tees, custom designs',
+  authors: [{ name: 'Spreading Light' }],
+  creator: 'Spreading Light',
+  publisher: 'Spreading Light',
+  category: 'Fashion & Apparel',
   robots: {
     index: true,
     follow: true,
@@ -40,33 +40,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://mendograss.com',
-    title: 'Mendo Grass - Fresh Organic Microgreens',
-    description: 'Premium organic microgreens and wheatgrass from Mendocino County, California.',
-    siteName: 'Mendo Grass',
+    url: 'https://spreadinglight.com',
+    title: 'Spreading Light - Custom Bleach Art T-Shirts',
+    description: 'Unique bleach art t-shirts with custom designs. Shop our collection of pop culture, cannabis, and abstract art on premium navy and black shirts.',
+    siteName: 'Spreading Light',
     images: [
       {
-        url: '/wheatgrass_background.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mendo Grass - Fresh Organic Microgreens',
+        alt: 'Spreading Light - Custom Bleach Art T-Shirts',
         type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mendo Grass - Premium Organic Microgreens & Wheatgrass',
-    description: 'Fresh, sun-grown organic microgreens and wheatgrass delivered weekly in Mendocino County.',
-    images: ['/wheatgrass_background.jpg'],
-    creator: '@mendograss',
-    site: '@mendograss',
+    title: 'Spreading Light - Unique Bleach Art T-Shirts',
+    description: 'Shop custom bleach art t-shirts with unique designs. Pop culture, cannabis, and abstract art on navy and black shirts.',
+    images: ['/og-image.jpg'],
+    creator: '@spreadinglight',
+    site: '@spreadinglight',
   },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
   },
   alternates: {
-    canonical: 'https://mendograss.com',
+    canonical: 'https://spreadinglight.com',
   },
   icons: {
     icon: [
@@ -92,15 +92,14 @@ export default function RootLayout({
       <head>
         <StructuredData />
         <meta name="google-site-verification" content={process.env.GOOGLE_SITE_VERIFICATION} />
-        <link rel="canonical" href="https://mendograss.com" />
+        <link rel="canonical" href="https://spreadinglight.com" />
       </head>
       <body
-        className={`${crimsonText.variable} antialiased`}
+        className={${crimsonText.variable} antialiased}
       >
-        {/* Skip to main content for accessibility */}
-        <a 
-          href="#main-content" 
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-green-600 focus:text-white focus:rounded focus:shadow-lg"
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-orange-600 focus:text-black focus:rounded focus:shadow-lg"
         >
           Skip to main content
         </a>
@@ -110,13 +109,11 @@ export default function RootLayout({
         </main>
         <Footer />
         <CookieConsent />
-        
-        {/* Google Analytics */}
+
         {process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}
-        
-        {/* Google Tag Manager */}
+
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
         )}

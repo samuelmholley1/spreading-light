@@ -1,36 +1,36 @@
 {
-  "name": "mendograss",
-  "version": "0.1.1",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "build:test": "playwright test && next build",
-    "build:only": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "test:ui": "playwright test --ui",
-    "test:report": "playwright show-report"
-  },
-  "dependencies": {
-    "@next/third-parties": "^15.5.7",
-    "next": "^15.5.7",
-    "next-seo": "^6.8.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@playwright/test": "^1.55.0",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "^15.5.7",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+    "name":  "spreading-light",
+    "version":  "1.0.0",
+    "private":  true,
+    "scripts":  {
+                    "dev":  "next dev --turbopack",
+                    "build":  "next build",
+                    "build:test":  "playwright test \u0026\u0026 next build",
+                    "build:only":  "next build",
+                    "start":  "next start",
+                    "lint":  "eslint",
+                    "test":  "playwright test",
+                    "test:headed":  "playwright test --headed",
+                    "test:ui":  "playwright test --ui",
+                    "test:report":  "playwright show-report"
+                },
+    "dependencies":  {
+                         "@next/third-parties":  "^15.5.7",
+                         "next":  "^15.5.7",
+                         "next-seo":  "^6.8.0",
+                         "react":  "19.1.0",
+                         "react-dom":  "19.1.0"
+                     },
+    "devDependencies":  {
+                            "@eslint/eslintrc":  "^3",
+                            "@playwright/test":  "^1.55.0",
+                            "@tailwindcss/postcss":  "^4",
+                            "@types/node":  "^20",
+                            "@types/react":  "^19",
+                            "@types/react-dom":  "^19",
+                            "eslint":  "^9",
+                            "eslint-config-next":  "^15.5.7",
+                            "tailwindcss":  "^4",
+                            "typescript":  "^5"
+                        }
 }
