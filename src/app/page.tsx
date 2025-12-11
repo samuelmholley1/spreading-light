@@ -102,16 +102,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mb-20">
             {/* Pop Culture */}
-            <div className="product-card group text-left p-10">
-              <div className="w-16 h-16 mb-8 rounded-lg bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+            <div className="product-card group text-left p-6">
+              <div className="w-10 h-10 mb-5 rounded bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
+                <svg className="w-5 h-5 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-black text-[#ffb685] mb-4 uppercase tracking-tight">Pop Culture</h3>
-              <p className="text-[#f5f5dc] mb-3 font-light leading-relaxed">
+              <h3 className="text-lg font-black text-[#ffb685] mb-2 uppercase tracking-tight">Pop Culture</h3>
+              <p className="text-sm text-[#f5f5dc] mb-2 font-light leading-relaxed">
                 Star Wars, movies, gaming icons
               </p>
               <p className="text-xs text-[#d4a574] uppercase tracking-wider">
@@ -120,14 +120,14 @@ export default function Home() {
             </div>
 
             {/* Cannabis & Nature */}
-            <div className="product-card group text-left p-10">
-              <div className="w-16 h-16 mb-8 rounded-lg bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            <div className="product-card group text-left p-6">
+              <div className="w-10 h-10 mb-5 rounded bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
+                <svg className="w-5 h-5 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-black text-[#ffb685] mb-4 uppercase tracking-tight">Cannabis & Nature</h3>
-              <p className="text-[#f5f5dc] mb-3 font-light leading-relaxed">
+              <h3 className="text-lg font-black text-[#ffb685] mb-2 uppercase tracking-tight">Cannabis & Nature</h3>
+              <p className="text-sm text-[#f5f5dc] mb-2 font-light leading-relaxed">
                 Botanical designs, leaf art, natural vibes
               </p>
               <p className="text-xs text-[#d4a574] uppercase tracking-wider">
@@ -136,14 +136,14 @@ export default function Home() {
             </div>
 
             {/* Abstract */}
-            <div className="product-card group text-left p-10">
-              <div className="w-16 h-16 mb-8 rounded-lg bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            <div className="product-card group text-left p-6">
+              <div className="w-10 h-10 mb-5 rounded bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center">
+                <svg className="w-5 h-5 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="text-xl font-black text-[#ffb685] mb-4 uppercase tracking-tight">Abstract Art</h3>
-              <p className="text-[#f5f5dc] mb-3 font-light leading-relaxed">
+              <h3 className="text-lg font-black text-[#ffb685] mb-2 uppercase tracking-tight">Abstract Art</h3>
+              <p className="text-sm text-[#f5f5dc] mb-2 font-light leading-relaxed">
                 Cosmic bursts, galaxy effects, pure chaos
               </p>
               <p className="text-xs text-[#d4a574] uppercase tracking-wider">
@@ -352,43 +352,43 @@ export default function Home() {
       </section>
 
       {/* About/Process Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-[#1a1f36] to-[#0a0a0a]">
+      <section className="py-32 px-6 md:px-8 bg-gradient-to-b from-[#1a1f36] to-[#0a0a0a]">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-[#ffb685] mb-6">How It Works</h2>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-black text-[#ffb685] uppercase tracking-tight">How It Works</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-3xl font-bold text-[#0a0a0a]">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-2xl font-black text-[#0a0a0a]">
                 1
               </div>
-              <h3 className="text-xl font-bold text-[#ffb685] mb-3">Submit Order</h3>
-              <p className="text-[#f5f5dc]">Fill out the form with your design preferences</p>
+              <h3 className="text-base font-black text-[#ffb685] mb-2 uppercase tracking-tight">Submit</h3>
+              <p className="text-sm text-[#f5f5dc] font-light">Fill out the form with your design preferences</p>
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-3xl font-bold text-[#0a0a0a]">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-2xl font-black text-[#0a0a0a]">
                 2
               </div>
-              <h3 className="text-xl font-bold text-[#ffb685] mb-3">Get Quote</h3>
-              <p className="text-[#f5f5dc]">Receive payment link and timeline via email</p>
+              <h3 className="text-base font-black text-[#ffb685] mb-2 uppercase tracking-tight">Quote</h3>
+              <p className="text-sm text-[#f5f5dc] font-light">Receive payment link and timeline via email</p>
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-3xl font-bold text-[#0a0a0a]">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-2xl font-black text-[#0a0a0a]">
                 3
               </div>
-              <h3 className="text-xl font-bold text-[#ffb685] mb-3">We Create</h3>
-              <p className="text-[#f5f5dc]">Your shirt is crafted with bleach art magic</p>
+              <h3 className="text-base font-black text-[#ffb685] mb-2 uppercase tracking-tight">Create</h3>
+              <p className="text-sm text-[#f5f5dc] font-light">Your shirt is crafted with bleach art magic</p>
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-3xl font-bold text-[#0a0a0a]">
+              <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-gradient-to-br from-[#ffb685] to-[#d4a574] flex items-center justify-center text-2xl font-black text-[#0a0a0a]">
                 4
               </div>
-              <h3 className="text-xl font-bold text-[#ffb685] mb-3">Shipped</h3>
-              <p className="text-[#f5f5dc]">Unique wearable art delivered to your door</p>
+              <h3 className="text-base font-black text-[#ffb685] mb-2 uppercase tracking-tight">Ship</h3>
+              <p className="text-sm text-[#f5f5dc] font-light">Unique wearable art delivered to your door</p>
             </div>
           </div>
         </div>
